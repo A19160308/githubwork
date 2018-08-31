@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>练习1</title>
+  <style type="text/css">
+    body,html {
+      height: 100%;
+    }
+    .left,
+    .right {
+      float: left;
+      width: 50%;
+    }
+  </style>
+</head>
+<body>
+<h1 align="center">这是一段文字排版练习</h1>
+<div class="left" style="width: 518px; margin-left:50px;margin-top: 20px;">
+<h4>段落效果——使用排版标记</h4>
+<ul type="disc">
+<li>&lt;p&gt;标记：</li>
+ 用来分出段落，成对出现。
+<li>&lt;br&gt;标记：</li>
+ 用来换行，没有结尾标记。建议使用&lt;br /&gt;
+<li>&lt;pre&gt;标记：</li>
+ 成对出现，开始标记与结尾标记之间的文字按照原始代码的排列方式进行显示。
+<li>&lt;hr&gt;标记：</li>
+添加分割线，让画面更加容易区分主题或段落。属性有：align，size，width，color，noshade等。
+<li>&lt;h1&gt;标记：</li>
+设置段落的标题大小和级别，共有六个级别。由此标记标识的文字将会独占一行。
+</ul>
+<h4>div标记</h4>
+<p>
+	&lt;div&gt;标记是容器标记，结束必须有&lt;/div&gt;标记，属于独立的<b>区块</b>标记（block-level）。
+	也就是说，他不会与其他组件同时显示在同一行，&lt;/div&gt;标记之后会自动换行。其功能有点类似群组，只要放在div标
+	记里的组件，都会称为单一对象。在HTML语法里，div标记通常被用来做对齐功能，语法如下：
+</p>
+<p>
+&lt;div align="center" style="font-size:13pt:"&gt;
+</p>
+</div>
+<div class="right" style="width: 518px; margin-left:100px;margin-top: 20px;">
+<h4>文字效果——使用文字标记标记</h4>
+<ul type="disc">
+<li>&lt;b&gt;标记：</li>
+成对出现,将文字设置为粗体。
+<li>&lt;u&gt;标记：</li>
+成对出现，为文字添加下划线。
+<li>&lt;i&gt;标记：</li>
+ 成对出现，将文字设置为斜体。
+<li>&lt;sup&gt;&lt;sub&gt;标记：</li>
+ 成对出现，为文字添加上标和下标。通常用于公式的显示。
+</ul>
+<h4>HTML中常用到的特殊符号</h4>
+<table border="1">
+<tr>
+<td><b>特殊符号</b></td>
+<td><b>HTML表示法</b></td>
+</tr>
+<tr>
+<td align="right">&copy;</td>
+<td>&amp;copy；</td>
+</tr>
+<tr>
+<td align="right">&lt;</td>
+<td>&amp;lt;</td>
+</tr>
+<tr>
+<td align="right">&gt;</td>
+<td>&amp;gt;</td>
+</tr>
+<tr>
+<td align="right">&quot;</td>
+<td>&amp;quot;</td>
+</tr>
+<tr>
+<td align="right">&amp;</td>
+<td>&amp;amp; </td>
+</tr>
+<tr>
+<td align="right">半角空格</td>
+<td> &amp;nbsp; </td>
+</tr>
+</table>
+</div>
+</body>
+</html>
