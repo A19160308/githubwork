@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>练习4</title>
+  <style type="text/css">
+    .alert {
+      padding:15px;
+      margin-bottom:20px;
+      border:1px solid transparent;
+      border-radius:4px;
+    }
+    .alert-success{
+      color:#3c763d;
+      background-color:#dff0d8;
+      border-color:#d6e9c6;
+    }
+    .alert-info{
+      color:#31708f;
+      background-color:#d9edf7;
+      border-color:#bce8f1;
+    }
+    .alert-warning{
+      color:#8a6d3b;
+      background-color:#fcf8e3;
+      border-color:#faebcc;
+    }
+    .alert-danger{
+      color:#a94442;
+      background-color:#f2dede;
+      border-color:#ebccd1;
+    }
+  </style>
+</head>
+<body>
+<div style="width:788px;margin-left:auto;margin-right:auto;">
+<div class="alert alert-info">
+<h3>本次任务涉及的知识点如下：</h3>
+<ul type="disc">
+<li>定义CSS的内部样式表</li>
+</ul>
+</div>
+<div class="alert alert-warning">
+<h3>本次任务主要目标如下：</h3>
+<ol type="1">
+<li>尝试定义通用样式表，为以后任务使用。</li>
+</ol>
+</div>
+<table>
+<tr>
+<td rowspan="2"><div class="alert alert-info">
+<h3>定义本页全局样式类如下：</h3>
+<p>
+  &lt;style type="text/css"&gt;<br>
+    &emsp;.alert {<br>
+    &emsp;&emsp;  padding:15px;<br>
+    &emsp;&emsp;  margin-bottom:20px;<br>
+    &emsp;&emsp;  border:1px solid transparent;<br>
+    &emsp;&emsp;  border-radius:4px;<br>
+    &emsp;}<br>
+    &emsp;.alert-success{<br>
+    &emsp;&emsp;  color:#3c763d;<br>
+    &emsp;&emsp;  background-color:#dff0d8;<br>
+    &emsp;&emsp;  border-color:#d6e9c6;<br>
+    &emsp;}<br>
+    &emsp;.alert-info{<br>
+    &emsp;&emsp;  color:#31708f;<br>
+    &emsp;&emsp;  background-color:#d9edf7;<br>
+    &emsp;&emsp;  border-color:#bce8f1;<br>
+    &emsp;}<br>
+    &emsp;.alert-warning{<br>
+    &emsp;&emsp;  color:#8a6d3b;<br>
+    &emsp;&emsp;  background-color:#fcf8e3;<br>
+    &emsp;&emsp;  border-color:#faebcc;<br>
+    &emsp;}<br>
+    &emsp;.alert-danger{<br>
+     &emsp;&emsp; color:#a94442;<br>
+     &emsp;&emsp; background-color:#f2dede;<br>
+    &emsp;&emsp;  border-color:#ebccd1;<br>
+    }<br>
+  &lt;/style&gt;<br>
+</p>
+</div></td>
+<td><div class="alert alert-info">
+<h3>本面板用来指明任务知识点</h3>
+<div style="line-height:0px">
+<h5>本面板实现方法如下：</h5>
+<h5>&emsp;&lt;div class="alert alert-info"&gt;</h5>
+<h5>&emsp;&emsp;&lt;h4&gt;知识点标题&lt;/h4&gt;</h5>
+<h5>&emsp;&emsp;&lt;p&gt;知识点内容....&lt;/p&gt;</h5>
+<h5>&emsp;&lt;/div&gt;</h5>
+</div>
+</div></td>
+<td><div class="alert alert-warning">
+<h3>本面板用来指明任务说明：</h3>
+<div style="line-height:0px">
+<h5>本面板实现方法如下：</h5>
+<h5>&emsp;&lt;div class="alert alert-warning"&gt;</h5>
+<h5>&emsp;&emsp;&lt;h4&gt;任务说明标题&lt;/h4&gt;</h5>
+<h5>&emsp;&emsp;&lt;p&gt;任务说明内容....&lt;/p&gt;</h5>
+<h5>&emsp;&lt;/div&gt;</h5>
+</div>
+</div></td>
+</tr>
+<tr>
+<td><div class="alert alert-danger">
+<h3>本面板用来标明任务样例：</h3>
+<div style="line-height:0px">
+<h5>本面板实现方法如下：</h5>
+<h5>&emsp;&lt;div class="alert alert-danger"&gt;</h5>
+<h5>&emsp;&emsp;&lt;h4&gt;任务样例标题&lt;/h4&gt;</h5>
+<h5>&emsp;&emsp;&lt;p&gt;任务样例内容....&lt;/p&gt;</h5>
+<h5>&emsp;&lt;/div&gt;</h5>
+</div>
+</div></td>
+<td><div class="alert alert-success">
+<h3>本面板用来标明任务样例:</h3>
+<div style="line-height:0px">
+<h5>本面板实现方法如下：</h5>
+<h5>&emsp;&lt;div class="alert alert-success"&gt;</h5>
+<h5>&emsp;&emsp;&lt;h4&gt;任务样例标题&lt;/h4&gt;</h5>
+<h5>&emsp;&emsp;&lt;p&gt;任务样例内容....&lt;/p&gt;</h5>
+<h5>&emsp;&lt;/div&gt;</h5>
+</div>
+</div></td>
+</tr>
+</table>
+</div>
+</body>
+</html>
