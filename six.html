@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>练习6</title>
+  <style type="text/css">
+    .alert {
+      padding:15px;
+      margin-bottom:2px;
+      border:1px solid transparent;
+      border-radius:4px;
+    }
+        .alert-success{
+      color:#3c763d;
+      background-color:#dff0d8;
+      border-color:#d6e9c6;
+    }
+    .alert-warning{
+      color:#8a6d3b;
+      background-color:#fcf8e3;
+      border-color:#faebcc;
+    }
+    .alert-danger{
+      color:#a94442;
+      background-color:#f2dede;
+      border-color:#ebccd1;
+    }
+   </style>
+</head>
+<body>
+<div style="width:1200px;margin-left:auto;margin-right:auto;">
+<div class="alert alert-warning" >
+<h4>本次任务主要目标如下：</h4>
+<ol type="1">
+<li>详细研究HTML区块分类，这种技术在未来页面布局中经常使用到。</li>
+<li>本任务不研究display属性，任何组件不要设置display属性样式。</li>
+</ol>
+</div>
+<div class="alert alert-success" style="line-height:300%">
+<h4>行内元素（inline）演示（下面代码应用样式：style="line-height:300%;"）</h4>
+<strong>&lt;strong&gt;加粗文本&lt;/strong&gt;</strong><span style="width:1000px;
+height:1000px;background:green;color:white;">&lt;span style="width:1000px;
+height:1000px;background:green;color:white;"&gt;设置宽度和高度无效&lt;/span&gt;</span>
+<i>&lt;i&gt;斜体文本&lt;/i&gt;</i><span style="background:red;"><span style="margin:1000px 50px;
+background:blue;color:white;">&lt;span style="background:red;"&gt;&lt;span style="margin:1000px 50px;
+background:blue;color:white;"&gt;外边距左右有效，上下无效&lt;/span&gt;&lt;/span&gt;</span></span><strike>
+&lt;strike&gt;中横线文本&lt;/strike&gt;</strike><span style="padding: 5px;background:blue;color:white;">
+&lt;span style="padding:1000px 50px(改成padding:5px了);background:blue;color:white;"&gt;内边距左右有效，上下无效&lt;/span&gt;</span>
+<u>&lt;u&gt;下划线文本&lt;/u&gt;</u><sub>&lt;sub&gt;下标文本&lt;/sub&gt;</sub><sup>&lt;sup&gt;上标文本&lt;/sup&gt;</sup>
+</div>
+<div class="alert alert-danger" >
+<h4>块状元素（block）演示</h4>
+<div style="background:green;color:white;">
+&lt;div style="background:green;color:white;"&gt;&lt;/div&gt;
+</div>
+<div style="background:blue;color:white;width:600px;height:80px;">
+&lt;div style="background:blue;color:white;width:600px;height:80px;"&gt;&lt;/div&gt;
+</div>
+<div style="background:green;color:white;padding:50px;">
+&lt;div style="background:green;color:white;padding:50px;"&gt;&lt;/div&gt;
+</div>
+<div style="background:blue;width:600px;overflow:hidden;">
+<div style="background:red;color:white;margin:50px;">
+&lt;div style="background:blue;width:600px;overflow:hidden;"&gt;
+&lt;div style="background:red;color:white;margin:50px;"&gt;
+&lt;/div&gt;&lt;/div&gt;
+</div></div>
+<div style="background:green;width:600px;overflow:hidden;">
+<div style="background:red;color:white;margin:50px;padding:50px;">
+&lt;div style="background:green;width:600px;overflow:hidden;"&gt;
+&lt;div style="background:red;color:white;margin:50px;padding:50px;"&gt;
+&lt;/div&gt;&lt;/div&gt;
+</div></div>
+</div>
+</body>
+</html>

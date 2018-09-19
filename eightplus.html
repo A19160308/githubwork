@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>练习8</title>
+<link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
+  <style type="text/css">
+  	.left,
+  	.middle,
+    .right
+     {
+      float: right;
+      width: 396px;
+    }
+    .left1,
+  	.middle1
+     {
+      float: left;
+      width: 396px;
+    }
+    .alert {
+      padding:15px;
+      margin-bottom:4px;
+      margin-left:2px;
+      margin-right:2px;
+      border:1px solid transparent;
+      border-radius:4px;
+    }
+        .alert-green{
+      color:#3c763d;
+      background-color:#dff0d8;
+      border-color:#d6e9c6;
+    }
+    .alert-yellow{
+      color:#8a6d3b;
+      background-color:#fcf8e3;
+      border-color:#faebcc;
+    }
+    .alert-blue{		
+      color:#31708f;
+      background-color:#d9edf7;
+      border-color:#bce8f1;
+    }
+    .alert-pink{
+      color:#a94442;
+      background-color:#f2dede;
+      border-color:#ebccd1;
+    }
+    #id11:link {color:green;}
+	#id12:link {color:red;}
+	#id21:visited {color:yellow;}
+	#id22:visited {color:red;}
+	#id31:hover{color:yellow;}
+	#id32:hover{color:red;}
+	#id41:active{color:green;}
+	#id42:active{color:red;}
+	#id51{text-decoration:none;}
+	#id52{text-decoration:underline;}
+	#id53{text-decoration:overline;}
+	#id54{text-decoration:line-through;}
+	#id55{text-decoration:none;}
+	#id56{text-decoration:underline;}
+	#id57{text-decoration:overline;}
+	#id58{text-decoration:line-through;}
+	#id59:link, #id59:visited{text-decoration:none;}
+	#id59:hover, #id59:active{text-decoration:underline;}
+	#id1{cursor:default;}
+	#id2{cursor:none;}
+	#id3{cursor:help;}
+	#id4{cursor:pointer;}
+	#id5{cursor:progress;}
+	#id6{cursor:wait;}
+	#id7{cursor:cell;}
+	#id8{cursor:crosshair;}
+	#id9{cursor:text;}
+	#id10{cursor:vertical-text;}
+	#id13{cursor:alias;}
+	#id14{cursor:copy;}
+	#id15{cursor:move;}
+	#id16{cursor:no-drop;}
+	#id17{cursor:not-allowed;}
+	#id18{cursor:e-resize;}
+	#id20{cursor:n-resize;}
+	#id23{cursor:ne-resize;}
+	#id24{cursor:nw-resize;}
+	#id25{cursor:s-resize;}
+	#id26{cursor:se-resize;}
+	#id27{cursor:sw-resize;}
+	#id28{cursor:w-resize;}
+	#id29{cursor:ew-resize;}
+	#id30{cursor:ns-resize;}
+	#id33{cursor:nesw-resize;}
+	#id34{cursor:nwse-resize;}
+	#id35{cursor:col-resize;}
+	#id36{cursor:row-resize;}
+	#id37{cursor:all-scroll;}
+   </style>
+</head>
+<body>
+<div style="width:1300px;margin-left:auto;margin-right:auto;">
+<div class="alert alert-blue" >
+<h4>本次任务涉及的知识点如下：</h4>
+<ul type="square">
+<li>HTML链接组件</li>
+	<ul type="circle">
+	<li>教程相关网址：</li>
+		<ul type="square">
+		<li>http://www.runoob.com/html/html-links.html</li>
+		<li>http://www.runoob.com/css/css-links.html</li>
+		</ul>
+	</ul>
+		<ul type="circle">
+	<li>链接四种状态：</li>
+		<ul type="square">
+		<li>a:link-正常，用户未访问过的链接。</li>
+		<li>a:visited-用户已访问过的链接。</li>
+		<li>a:hover-当用户鼠标悬停在链接上时。</li>
+		<li>a:active-当用户鼠标点击按下时（未松手）。</li>
+		</ul>
+	</ul>
+		<ul type="circle">
+	<li>当设置链接的多种状态共存时，必须遵守如下设置顺序：</li>
+		<ul type="square">
+		<li>a:hover必须跟在a:link和a:visited后面。</li>
+		<li>a:active必须在a:hover之后。</li>
+		</ul>
+	</ul>
+</ul>
+</div>
+<div class="alert alert-yellow" >
+<h4>本次任务主要目标如下：</h4>
+ <ol type="1">
+  <li>详细研究HTML链接。</li>
+  <li>使用css设置HTML链接样式。</li>
+ </ol>
+</div>
+<div class="right alert alert-green" >
+<h4>当前页面跳转</h4>
+<h6 id="G0T01">章节1</h6>
+<p style="margin-bottom:300px">
+<a href="#G0T01">跳转章节1</a>
+<a href="#G0T02">跳转章节2</a>
+<a href="#G0T03">跳转章节3</a>
+</p>
+<h6 id="G0T02">章节2</h6>
+<p style="margin-bottom:300px">
+<a href="#G0T01">跳转章节1</a>
+<a href="#G0T02">跳转章节2</a>
+<a href="#G0T03">跳转章节3</a>
+</p>
+<h6 id="G0T03">章节3</h6>
+<p >
+<a href="#G0T01">跳转章节1</a>
+<a href="#G0T02">跳转章节2</a>
+<a href="#G0T03">跳转章节3</a>
+</p>
+<table border="1" cellspacing="0" cellpadding="3" width="400px">
+<tr><td bgcolor="green" ><font color="white"><i class="fa fa-file-text-o"></i>&emsp;代码提示</font></td></tr>
+<tr>
+<td>
+&lt;h4&gt;当前页面内跳转&lt;/h4&gt;<br>
+&lt;h6 id="G0T01"&gt;章节1&lt;/h6&gt;<br>
+&lt;p style="margin-bottom:500px"&gt;<br>
+<div style="margin-left:20px">
+&lt;a href="G0T01"&gt;跳转章节1&lt;/a&gt;<br>
+&lt;a href="G0T02"&gt;跳转章节2&lt;/a&gt;<br>
+&lt;a href="G0T03"&gt;跳转章节3&lt;/a&gt;<br>
+</div>
+&lt;/p&gt;<br>
+&lt;h6 id="G0T02"&gt;章节2&lt;/h6&gt;<br>
+&lt;p style="margin-bottom:500px"&gt;<br>
+<div style="margin-left:20px">
+&lt;a href="G0T01"&gt;跳转章节1&lt;/a&gt;<br>
+&lt;a href="G0T02"&gt;跳转章节2&lt;/a&gt;<br>
+&lt;a href="G0T03"&gt;跳转章节3&lt;/a&gt;<br>
+</div>
+&lt;/p&gt;<br>
+&lt;h6 id="G0T03"&gt;章节3&lt;/h6&gt;<br>
+&lt;p style="margin-bottom:500px"&gt;<br>
+<div style="margin-left:20px">
+&lt;a href="G0T01"&gt;跳转章节1&lt;/a&gt;<br>
+&lt;a href="G0T02"&gt;跳转章节2&lt;/a&gt;<br>
+&lt;a href="G0T03"&gt;跳转章节3&lt;/a&gt;<br>
+</div>
+&lt;/p&gt;<br>
+</td>
+</tr>
+</table>
+</div>
+<div class="middle alert alert-pink" style="height:260px">
+<h4>
+<a href="https://www.baidu.com/" target="_blank">
+<i class="fa fa-hand-o-right"></i>
+点击这里，在新页打开百度
+</a>
+</h4>
+<table border="1" cellspacing="0" cellpadding="3" width="400px">
+<tr><td bgcolor="pink" ><font color="white"><i class="fa fa-file-text-o"></i>&emsp;代码提示</font></td></tr>
+<tr><td>
+&lt;h4&gt;<br>
+<div style="margin-left:20px">
+&lt;h4&gt;<br>
+&lt;a href="https://www.baidu.com/"&gt;<br>
+&emsp;target="_blank"<br>
+&lt;i class="fa fa-hand-o-right"&gt;&lt;/i&gt;<br>
+点击这里，在新页打开百度<br>
+&lt;/a&gt;<br>
+</div>
+&lt;/h4&gt;<br>
+</td></tr>
+</table>
+</div>
+<div class="left alert alert-green" style="height:250px">
+<h4>
+<a href="https://www.baidu.com/">
+<i class="fa fa-hand-o-right"></i>
+点击这里，在本页跳转到百度
+</a>
+</h4>
+<table border="1" cellspacing="0" cellpadding="3" width="400px">
+<tr><td bgcolor="green" ><font color="white"><i class="fa fa-file-text-o"></i>&emsp;代码提示</font></td></tr>
+<tr><td>
+&lt;h4&gt;<br>
+<div style="margin-left:20px">
+&lt;h4&gt;<br>
+&lt;a href="https://www.baidu.com/"&gt;<br>
+&lt;i class="fa fa-hand-o-right"&gt;&lt;/i&gt;<br>
+点击这里，在本页跳转到百度<br>
+&lt;/a&gt;<br>
+</div>
+&lt;/h4&gt;<br>
+</td></tr>
+</table>
+</div>
+<div class="left1 alert alert-pink" style="height:280px">
+<a id="id11" href="#id11">
+未访问链接显示为绿色
+</a><br>
+<a id="id12" href="#id12">
+未访问链接显示为红色
+</a><br>
+<table border="1" cellspacing="0" cellpadding="3" width="400px">
+<tr><td bgcolor="pink" ><font color="white"><i class="fa fa-file-text-o"></i>&emsp;代码提示</font></td></tr>
+<tr><td>
+&lt;style type="text/css"&gt;<br>
+<div style="margin-left:20px">
+#id11:link{color:green;}<br>
+#id12:link{color:red;}<br>
+</div>
+&lt;/style&gt;<br>
+&lt;a id="id11" href="#id11"&gt;<br>
+未访问链接显示为绿色<br>
+&lt;/a&gt;&lt;br&gt;<br>
+&lt;a id="id12" href="#id12"&gt;<br>
+未访问链接显示为红色<br>
+&lt;/a&gt;&lt;br&gt;<br>
+</td></tr>
+</table>
+</div>
+<div class="middle1 alert alert-green" style="height:280px" >
+<a id="id21" href="#id21">
+已访问链接显示为黄色
+</a><br>
+<a id="id22" href="#id22">
+已访问链接显示为红色
+</a><br>
+<table border="1" cellspacing="0" cellpadding="3" width="400px">
+<tr><td bgcolor="green" ><font color="white"><i class="fa fa-file-text-o"></i>&emsp;代码提示</font></td></tr>
+<tr><td>
+&lt;style type="text/css"&gt;<br>
+<div style="margin-left:20px">
+#id21:visited{color:yellow;}<br>
+#id22:visited{color:red;}<br>
+</div>
+&lt;/style&gt;<br>
+&lt;a id="id21" href="#id21"&gt;<br>
+已访问链接显示为黄色<br>
+&lt;/a&gt;&lt;br&gt;<br>
+&lt;a id="id22" href="#id22"&gt;<br>
+已访问链接显示为红色<br>
+&lt;/a&gt;&lt;br&gt;<br>
+</td></tr>
+</table>
+</div>
+
+
+<div class="left1 alert alert-green"  style="height:280px">
+<a id="id31" href="#id31">
+鼠标悬停链接显示为黄色
+</a><br>
+<a id="id32" href="#id32">
+鼠标悬停链接显示为红色
+</a><br>
+<table border="1" cellspacing="0" cellpadding="3" width="400px">
+<tr><td bgcolor="green" ><font color="white"><i class="fa fa-file-text-o"></i>&emsp;代码提示</font></td></tr>
+<tr><td>
+&lt;style type="text/css"&gt;<br>
+<div style="margin-left:20px">
+#id31:hover{color:yellow;}<br>
+#id32:hover{color:red;}<br>
+</div>
+&lt;/style&gt;<br>
+&lt;a id="id31" href="#id31"&gt;<br>
+鼠标悬停链接显示为黄色<br>
+&lt;/a&gt;&lt;br&gt;<br>
+&lt;a id="id32" href="#id32"&gt;<br>
+鼠标悬停链接显示为红色<br>
+&lt;/a&gt;&lt;br&gt;<br>
+</td></tr>
+</table>
+</div>
+<div class="middle1 alert alert-pink" style="height:280px" >
+<a id="id41" href="#id41">
+鼠标点击按下时链接显示为绿色
+</a><br>
+<a id="id42" href="#id42">
+鼠标点击按下时链接显示为红色
+</a><br>
+<table border="1" cellspacing="0" cellpadding="3" width="400px">
+<tr><td bgcolor="pink" ><font color="white"><i class="fa fa-file-text-o"></i>&emsp;代码提示</font></td></tr>
+<tr><td>
+&lt;style type="text/css"&gt;<br>
+<div style="margin-left:20px">
+#id41:active{color:green;}<br>
+#id42:active{color:red;}<br>
+</div>
+&lt;/style&gt;<br>
+&lt;a id="id41" href="#id41"&gt;<br>
+鼠标点击按下时链接显示为绿色<br>
+&lt;/a&gt;&lt;br&gt;<br>
+&lt;a id="id42" href="#id42"&gt;<br>
+鼠标点击按下时链接显示为红色<br>
+&lt;/a&gt;&lt;br&gt;<br>
+</td></tr>
+</table>
+</div>
+
+<div class="left1 alert alert-pink"  style="height:800px">
+<h4>链接文本修饰</h4>
+<a id="id51" href="id51">无装饰链接</a><br>
+<a id="id52" href="id52">使用下划线装饰链接</a><br>
+<a id="id53" href="id53">使用上划线装饰链接</a><br>
+<a id="id54" href="id54">使用贯穿线装饰链接</a><br>
+<p id="id55">无装饰文本段</p>
+<p id="id56">使用下划线装饰文本段</p>
+<p id="id57">使用上划线装饰文本段</p>
+<p id="id58">使用贯穿线装饰文本段</p>
+<a id="id59" href="id59">综合样例</a><br>
+<table border="1" cellspacing="0" cellpadding="3" width="400px">
+<tr><td bgcolor="pink" ><font color="white"><i class="fa fa-file-text-o"></i>&emsp;代码提示</font></td></tr>
+<tr>
+<td>
+&lt;style type="text/css"&gt;<br>
+#id51{text-decoration:none;}<br>
+#id52{text-decoration:underline;}<br>
+#id53{text-decoration:overline;}<br>
+#id54{text-decoration:line-through;}<br>
+#id55{text-decoration:none;}<br>
+#id56{text-decoration:underline;}<br>
+#id57{text-decoration:overline;}<br>
+#id58{text-decoration:line-through;}<br>
+#id59:link, #id59:visited{text-decoration:none;}<br>
+#id59:hover, #id59:active{text-decoration:underline;}<br>
+&lt;/style&gt;<br>
+&lt;a id="id51" href="id51"&gt;无装饰链接&lt;/a&gt;&lt;br&gt;<br>
+&lt;a id="id52" href="id52"&gt;使用下划线装饰链接&lt;/a&gt;&lt;br&gt;<br>
+&lt;a id="id53" href="id53"&gt;使用上划线装饰链接&lt;/a&gt;&lt;br&gt;<br>
+&lt;a id="id54" href="id54"&gt;使用贯穿线装饰链接&lt;/a&gt;&lt;br&gt;<br>
+&lt;p id="id55"&gt;无装饰链接&lt;/p&gt;<br>
+&lt;p id="id56"&gt;使用下划线装饰链接&lt;/p&gt;<br>
+&lt;p id="id57"&gt;使用上划线装饰链接&lt;/p&gt;<br>
+&lt;p id="id58"&gt;使用贯穿线装饰链接&lt;/p&gt;<br>
+&lt;a id="id59" href="id59"&gt;综合样例&lt;/a&gt;&lt;br&gt;<br>
+</td>
+</tr>
+</table>
+</div>
+<div class="middle1 alert alert-green" >
+<h4>自定义鼠标指针形状(注意鼠标悬停各个链接上时效果)</h4>
+<a id="id1" href="#id1">style="cursor:default"</a><br>
+<a id="id2" href="#id2">style="cursor:none"</a><br>
+<a id="id3" href="#id3">style="cursor:help"</a><br>
+<a id="id4" href="#id4">style="cursor:pointer"</a><br>
+<a id="id5" href="#id5">style="cursor:progress"</a><br>
+<a id="id6" href="#id6">style="cursor:wait"</a><br>
+<a id="id7" href="#id7">style="cursor:cell"</a><br>
+<a id="id8" href="#id8">style="cursor:crosshair"</a><br>
+<a id="id9" href="#id9">style="cursor:text"</a><br>
+<a id="id10" href="#id10">style="cursor:vertical-text"</a><br>
+<a id="id13" href="#id13">style="cursor:alias"</a><br>
+<a id="id14" href="#id14">style="cursor:copy"</a><br>
+<a id="id15" href="#id15">style="cursor:move"</a><br>
+<a id="id16" href="#id16">style="cursor:no-drop"</a><br>
+<a id="id17" href="#id17">style="cursor:not-allowed"</a><br>
+<a id="id18" href="#id18">style="cursor:e-resize"</a><br>
+<a id="id20" href="#id20">style="cursor:n-resize"</a><br>
+<a id="id23" href="#id23">style="cursor:ne-resize"</a><br>
+<a id="id24" href="#id24">style="cursor:nw-resize"</a><br>
+<a id="id25" href="#id25">style="cursor:s-resize"</a><br>
+<a id="id26" href="#id26">style="cursor:se-resize"</a><br>
+<a id="id27" href="#id27">style="cursor:sw-resize"</a><br>
+<a id="id28" href="#id28">style="cursor:w-resize"</a><br>
+<a id="id29" href="#id29">style="cursor:ew-resize"</a><br>
+<a id="id30" href="#id30">style="cursor:ns-resize"</a><br>
+<a id="id33" href="#id33">style="cursor:nesw-resize"</a><br>
+<a id="id34" href="#id34">style="cursor:nwse-resize"</a><br>
+<a id="id35" href="#id35">style="cursor:col-resize"</a><br>
+<a id="id36" href="#id36">style="cursor:row-resize"</a><br>
+<a id="id37" href="#id37">style="cursor:all-scroll"</a><br>
+</div>
+</div>
+
+
+</body>
+</html>

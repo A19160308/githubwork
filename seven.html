@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>练习7</title>
+  <style type="text/css">
+    .alert {
+      padding:15px;
+      margin-bottom:2px;
+      border:1px solid transparent;
+      border-radius:4px;
+    }
+        .alert-green{
+      color:#3c763d;
+      background-color:#dff0d8;
+      border-color:#d6e9c6;
+    }
+    .alert-yellow{
+      color:#8a6d3b;
+      background-color:#fcf8e3;
+      border-color:#faebcc;
+    }
+    .alert-blue{		
+      color:#31708f;
+      background-color:#d9edf7;
+      border-color:#bce8f1;
+    }
+    .alert-pink{
+      color:#a94442;
+      background-color:#f2dede;
+      border-color:#ebccd1;
+    }
+   </style>
+</head>
+<body>
+<div style="width:1300px;margin-left:auto;margin-right:auto;">
+<div class="alert alert-blue" >
+<h4>本次任务涉及的知识点如下：</h4>
+<ul type="disc">
+<li>HTML表单</li>
+	<ul type="circle">
+	<li>教程相关网址：</li>
+		<ul type="disc">
+		<li>http://www.runoob.com/html/html-forms.html</li>
+		<li>http://www.runoob.com/html/html5-form-input-types.html</li>
+		<li>http://www.runoob.com/html/html5-form-elements.html</li>
+		<li>http://www.runoob.com/html/html5-form-attributes.html</li>
+		</ul>
+	</ul>
+</ul>
+</div>
+<div class="alert alert-yellow" >
+<h4>本次任务主要目标如下：</h4>
+ <ol type="1">
+  <li>详细研究HTML表单及表单组件，这些组件是未来实现web应用常用组件。</li>
+  <li>本任务主要是静态展示这鞋组件，未来结合JavaScript可以实现更多操作人与网页互动。</li>
+ </ol>
+</div>
+<table>
+<tr>
+<td valign="top">
+<div class="alert alert-pink" style="width:600px;">
+<h4>表单&lt;form&gt;</h4>
+<table border="1" cellspacing="0" style="width:600px">
+<tr>
+<td align="center">效果</td>
+<td align="center">代码说明</td>
+</tr>
+<tr>
+<td></td>
+<td >
+&lt;<font color="red">form</font>&gt;<br>
+可输入组件<br>
+&lt;<font color="red">/form</font>&gt;<br>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td rowspan=3 valign="top">
+<div class="alert alert-green" style="width:625px;line-height:30px">
+<h4>文本域（Text Fields）</h4>
+<table border="1" cellspacing="0" style="width:625px">
+<tr>
+<td align="center">效果</td>
+<td align="center">代码说明</td>
+</tr>
+<tr>
+<td><input type="text"></td>
+<td>默认文本输入框&lt;<font color="red">input type="text"</font>&gt;</td>
+</tr>
+<tr>
+<td><input type="text" value="这里这里"></td>
+<td>设置默认值&lt;input type="text"<font color="red"> value="这里这里"</font>&gt;</td>
+</tr>
+<tr>
+<td>
+<input type="radio" name="sex" value="male">Male<br>
+<input type="radio" name="sex" value="female">Female
+</td>
+<td>
+第一组单选按钮<br>
+&lt;input <font color="red">type="radio"</font> name="sex" value="male"&gt;Male&lt;br&gt;
+&lt;input <font color="red">type="radio"</font> name="sex" value="female"&gt;Female
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" name="sex2" value="male">Male<br>
+<input type="radio" name="sex2" value="female">Female
+</td>
+<td>
+第二组单选按钮<br>
+&lt;input <font color="red">type="radio"</font> name="sex2" value="male"&gt;Male&lt;br&gt;
+&lt;input <font color="red">type="radio"</font> name="sex2" value="female"&gt;Female
+</td>
+</tr>
+<tr>
+<td>
+<input type="checkbox">我同意<br>
+<input type="checkbox">我不同意
+</td>
+<td>
+复选框（checkboxes）<br>
+&lt;input <font color="red">type="checkbox"</font>&gt;我同意&lt;br&gt;&lt;input <font color="red">type="checkbox"</font>&gt;我不同意
+</td>
+</tr>
+<tr>
+<td><input type="number"></td>
+<td>
+数值输入框，只能输入0-9和逗点<br>
+&lt;input <font color="red">type="number"</font>&gt;
+</td>
+</tr>
+<tr>
+<td><input type="text" disabled="disabled"></td>
+<td>
+禁用的输入框<br>
+&lt;input type="text" <font color="red">disabled="disabled"</font>&gt;
+</td>
+</tr>
+<tr>
+<td><input type="text" readonly="readonly"></td>
+<td>
+只读的输入框<br>
+&lt;input type="text" <font color="red">readonly="readonly"</font>&gt;
+</td>
+</tr>
+<tr>
+<td><input type="text" maxlength="3"></td>
+<td>
+只能输入三个字符。<br>
+&lt;input type="text" <font color="red">maxlength="3"</font>&gt;
+</td>
+</tr>
+<tr>
+<td><input type="text" size="5"></td>
+<td>
+输入字段中的可见5个字符数<br>
+&lt;input type="text" <font color="red">size="5"</font>&gt;
+</td>
+</tr>
+<tr>
+<td><input type="range" min="1" max="10"></td>
+<td>
+使用滑块设置数值<br>
+&lt;input <font color="red">type="range" min="1" max="10"</font>&gt;
+</td>
+</tr>
+<tr>
+<td><input type="image" src="http://www.oschina.net/build/oschina/components
+/imgs/oschina.svg?t=1532509772000"></td>
+<td>
+图片<br>
+&lt;input <font color="red">type="image" </font>src="http://www.oschina.net/
+build/oschina/components/imgs/oschina.svg?t=1532509772000"&gt;
+</td>
+</tr>
+<tr>
+<td><input type="image" src="http://www.oschina.net/build/oschina/components
+/imgs/oschina.svg?t=1532509772000" width="100px"></td>
+<td>
+图片,改变图片宽度<br>
+&lt;input type="image" src="http://www.oschina.net/build/oschina/components/
+imgs/oschina.svg?t=1532509772000" <font color="red">width="100px"</font>&gt;
+</td>
+</tr>
+<tr>
+<td><input type="file"></td>
+<td>
+上传文件<br>
+&lt;input <font color="red">type="file"</font>&gt;
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<div class="alert alert-green" style="width:600px">
+<h4>按钮</h4>
+<table border="1" cellspacing="0" style="width:600px">
+<tr>
+<td align="center">效果</td>
+<td align="center">代码说明</td>
+</tr>
+<tr>
+<td><input type="button" value="普通按钮"></td>
+<td>
+普通按钮<br>
+&lt;<font color="red">input type="button"</font> value="普通按钮"&gt;
+</td>
+</tr>
+<tr>
+<td><input type="submit" value="提交按钮"></td>
+<td>
+提交按钮<br>
+&lt;<font color="red">input type="submit"</font> value="提交按钮"&gt;
+</td>
+</tr>
+<tr>
+<td><input type="reset" value="重置按钮"></td>
+<td>
+重置按钮<br>
+&lt;<font color="red">input type="reset"</font> value="重置按钮"&gt;
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<div class="alert alert-pink" style="width:600px">
+<h4>下拉列表框（select）</h4>
+<table border="1" cellspacing="0" style="width:600px">
+<tr>
+<td align="center">效果</td>
+<td align="center">代码说明</td>
+</tr>
+<tr>
+<td><select></select></td>
+<td>
+空白下拉列表框<br>
+&lt;<font color="red">select</font> &gt;&lt;<font color="red">/select</font> &gt;
+</td>
+</tr>
+<tr>
+<td>
+<select><option>数据项目1</option><option>数据项目2</option>
+<option>数据项目3</option></select>
+</td>
+<td>
+填充数据的下拉列表框<br>
+&lt;select&gt;<font color="red">&lt;option&gt;数据项目1&lt;/option&gt;
+&lt;option&gt;数据项目2&lt;/option&gt;&lt;option&gt;数据项目3&lt;/option&gt;</font>
+&lt;/select&gt;
+</td>
+</tr>
+<tr>
+<td>
+<select><option>数据项目1</option><option selected="selected">数据项目2</option><option>数据项目3</option></select>
+</td>
+<td>
+带有预选值的下拉列表框<br>
+&lt;select&gt;&lt;option&gt;数据项目1&lt;/option&gt;
+&lt;option <font color="red">selected="selected"</font>&gt;数据项目2
+&lt;/option&gt;&lt;option&gt;数据项目3&lt;/option&gt;&lt;/select&gt;
+</td>
+</tr>
+<tr>
+<td>
+<select size="2"><option>数据项目1</option><option>数据项目2</option><option>数据项目3</option></select>
+</td>
+<td>
+设置可见数目的下拉列表框<br>
+&lt;select <font color="red">size="2"</font>&gt;&lt;option&gt;数据项目1&lt;/option&gt;
+&lt;option&gt;数据项目2&lt;/option&gt;&lt;option&gt;数据项目3&lt;/option&gt;
+&lt;/select&gt;
+</td>
+</tr>
+<tr>
+<td>
+<select multiple="multiple"><option>数据项目1</option><option>数据项目2</option><option>数据项目3</option></select>
+</td>
+<td>
+设置允许多选的下拉列表框，按住Ctrl进行多个选项。<br>
+&lt;select <font color="red">multiple="multiple"</font>&gt;&lt;option&gt;数据项目1&lt;/option&gt;
+&lt;option&gt;数据项目2&lt;/option&gt;&lt;option&gt;数据项目3&lt;/option&gt;
+&lt;/select&gt;
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td></td>
+</tr>
+<tr>
+<td>
+<div class="alert alert-green" style="width:600px">
+<h4>文本域（textarea）</h4>
+<table border="1" cellspacing="0" style="width:600px">
+<tr>
+<td align="center">效果</td>
+<td align="center">代码说明</td>
+</tr>
+<tr>
+<td><textarea >这个家伙很懒！</textarea></td>
+<td>
+默认多行文本输入组件<br>
+&lt;<font color="red">textarea</font>&gt;<br>
+这个家伙很懒！<br>
+&lt;<font color="red">/textarea</font>&gt;
+</td>
+</tr>
+<tr>
+<td><textarea  cols="30">这个家伙很懒！</textarea></td>
+<td>
+多行文本输入组件,设置显示宽度<br>
+&lt;textarea <font color="red">cols="30"</font>&gt;<br>
+这个家伙很懒！<br>
+&lt;<font color="red">/textarea</font>&gt;
+</td>
+</tr>
+<tr>
+<td><textarea rows="5">这个家伙很懒！</textarea></td>
+<td>
+多行文本输入组件,设置显示行数<br>
+&lt;textarea <font color="red">rows="30"</font>&gt;<br>
+这个家伙很懒！<br>
+&lt;<font color="red">/textarea</font>&gt;
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td valign="top">
+<div class="alert alert-pink" style="width:625px">
+<h4>表单字段组（fieldset）</h4>
+<table border="1" cellspacing="0" style="width:625px">
+<tr>
+<td align="center">效果</td>
+<td align="center">代码说明</td>
+</tr>
+<tr>
+<td><fieldset ><legend>分类：</legend>这里生活着一群可爱的蓝精灵！</fieldset></td>
+<td>
+默认多行文本输入组件<br>
+<font color="red">&lt;fieldset&gt;&lt;legend&gt;分类：&lt;/legend&gt;</font><br>
+这里生活着一群可爱的蓝精灵！<br>
+<font color="red">&lt;/fieldset&gt;</font>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>
